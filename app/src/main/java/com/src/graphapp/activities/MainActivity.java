@@ -29,7 +29,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         rbDirected = (RadioButton)findViewById(R.id.rbDirected);
         rbRandom = (RadioButton)findViewById(R.id.rbRandom);
 
-        bHelp.setOnClickListener(this);
+//        bHelp.setOnClickListener(this);
         bNext.setOnClickListener(this);
     }
 

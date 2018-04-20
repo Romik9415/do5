@@ -31,7 +31,7 @@ public class EdgeActivity extends AppCompatActivity implements View.OnClickListe
         etStart = (EditText)findViewById(R.id.etStart);
         etEnd = (EditText)findViewById(R.id.etEnd);
 
-        bHelp.setOnClickListener(this);
+//        bHelp.setOnClickListener(this);
         bInsert.setOnClickListener(this);
     }
 

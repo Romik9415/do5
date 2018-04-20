@@ -90,19 +90,7 @@ public class TopSortActivity extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.bDescription:
-                Intent i2 = new Intent(getApplicationContext(), DescriptionActivity.class);
-                i2.putExtra("title",title);
-                i2.putExtra("previous",3);
-                i2.putExtra("description",description);
-                i2.putExtra("complexity", complexity);
-                startActivity (i2);
-                break;
-            case R.id.bHelp:
-                Toast.makeText(TopSortActivity.this, TextsEN.getHelpByPosition(4), Toast.LENGTH_LONG).show();
-                break;
-        }
+
     }
 
     @Override

@@ -9,15 +9,8 @@ public class TextsEN {
             "Insert a Vertex",
             "Insert an Edge",
             "Show Graph",
-            "Kruskal",
             "Dijkstra",
-            "Breadth-First Search",
-            "Depth-First Search",
-            "Topological Sorting",
-            "Transitive Closure",
             "Floyd–Warshall",
-            "Reference",
-            "RESTART EMULATOR"
     };
 
     final static String[] insertion = {

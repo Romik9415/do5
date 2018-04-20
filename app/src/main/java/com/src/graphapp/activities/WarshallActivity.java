@@ -1,6 +1,7 @@
 package com.src.graphapp.activities;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -170,9 +171,13 @@ public class WarshallActivity extends AppCompatActivity implements View.OnClickL
             tvFW[10][i].setText(vertices.get(i).getName());
             tvFW[11][i].setText(vertices.get(i).getName());
         }
-        for(int i=0;i<size;i++)
-            for(int j=0;j<size;j++)
-                tvFW[i][j].setText(fwMatrix[i][j].toString());
+        for(int i=0;i<size;i++) {
+            for (int j = 0; j < size; j++) {
+                if (i==j){tvFW[i][j].setTextColor(Color.RED);}
+               if(fwMatrix[i][j]<999) {tvFW[i][j].setText(fwMatrix[i][j].toString());}
+               else {tvFW[i][j].setText("∞");}
+            }
+        }
     }
 
     @Override
@@ -191,8 +196,8 @@ public class WarshallActivity extends AppCompatActivity implements View.OnClickL
         bDescription = (Button)findViewById(R.id.bDescription);
         bHelp = (Button) findViewById(R.id.bHelp);
 
-        bHelp.setOnClickListener(this);
-        bDescription.setOnClickListener(this);
+//        bHelp.setOnClickListener(this);
+    //    bDescription.setOnClickListener(this);
     }
 
     @Override
@@ -219,19 +224,7 @@ public class WarshallActivity extends AppCompatActivity implements View.OnClickL
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.bDescription:
-                Intent i2 = new Intent(getApplicationContext(), DescriptionActivity.class);
-                i2.putExtra("title",title);
-                i2.putExtra("previous",3);
-                i2.putExtra("description",description);
-                i2.putExtra("complexity",complexity);
-                startActivity (i2);
-                break;
-            case R.id.bHelp:
-                Toast.makeText(WarshallActivity.this, TextsEN.getHelpByPosition(4), Toast.LENGTH_LONG).show();
-                break;
-        }
+
     }
 
     @Override

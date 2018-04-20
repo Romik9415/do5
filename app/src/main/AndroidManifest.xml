@@ -6,7 +6,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.AppCompat.NoActionBar" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".activities.MainActivity"
             android:label="@string/app_name" >
@@ -29,10 +29,6 @@
             android:label="@string/title_activity_vertex" >
         </activity>
         <activity
-            android:name=".activities.DescriptionActivity"
-            android:label="@string/title_activity_description" >
-        </activity>
-        <activity
             android:name=".activities.GraphActivity"
             android:label="@string/title_activity_graph" >
         </activity>
@@ -47,10 +43,6 @@
         <activity
             android:name=".activities.InputActivity"
             android:label="@string/title_activity_input" >
-        </activity>
-        <activity
-            android:name=".activities.ReferenceActivity"
-            android:label="@string/title_activity_reference" >
         </activity>
     </application>
 

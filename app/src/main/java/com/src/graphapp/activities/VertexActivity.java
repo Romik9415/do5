@@ -27,7 +27,7 @@ public class VertexActivity extends AppCompatActivity implements View.OnClickLis
         bInsert = (Button)findViewById(R.id.bInsert);
         etVertex = (EditText)findViewById(R.id.etVertex);
 
-        bHelp.setOnClickListener(this);
+//        bHelp.setOnClickListener(this);
         bInsert.setOnClickListener(this);
     }
 

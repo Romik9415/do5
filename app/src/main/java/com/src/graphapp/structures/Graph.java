@@ -46,9 +46,9 @@ public class Graph {
         String stuart = "";
 
         for (Edge edge: getEdges()){
-            stuart = stuart + edge.getStart().getName()
-                    + edge.getEnd().getName() + " - "
-                    + edge.getWeight() + " | ";
+            stuart =  stuart +"[ "+ edge.getStart().getName()
+                    + " , "+ edge.getEnd().getName()+" ]" + " - "
+                    + edge.getWeight() + " |\n ";
             edge.getStart().setVisited(true);
             edge.getEnd().setVisited(true);
         }

@@ -44,9 +44,9 @@ public class InputActivity extends AppCompatActivity implements View.OnClickList
         bNext = (Button)findViewById(R.id.bNext);
         bHelp = (Button)findViewById(R.id.bHelp);
 
-        tvTitle.setText(title);
+//        tvTitle.setText(title);
         bNext.setOnClickListener(this);
-        bHelp.setOnClickListener(this);
+  //      bHelp.setOnClickListener(this);
 
         if(algorithm!=4){ // if the algorithm is Dijkstra, it needs to get a start and a end to the Dijkstra Path
             tvEnd.setVisibility(View.INVISIBLE);

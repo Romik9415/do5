@@ -28,54 +28,40 @@ public class Controller {
             graph.randomGraphCreator();
         } else {
             // TEST
+            graph.addEdge(5,"1","2");
+            graph.addEdge(25,"1","4");
+            graph.addEdge(19,"4","2");
+            graph.addEdge(1,"2","3");
+            graph.addEdge(1,"8","4");
+            graph.addEdge(2,"7","8");
+            graph.addEdge(4,"7","3");
+            graph.addEdge(1,"3","9");
+            graph.addEdge(1,"5","7");
+            graph.addEdge(3,"6","7");
+            graph.addEdge(7,"5","3");
+            graph.addEdge(1,"9","5");
+            graph.addEdge(8,"9","6");
+//----------------------------------------
 
-            /*graph.addEdge(1,"a","b");
-            graph.addEdge(2,"b","d");
-            graph.addEdge(8,"b","e");
-            graph.addEdge(9,"a","c");
-            graph.addEdge(3,"e","c");
-            graph.addEdge(1,"d","f");
-            graph.addEdge(1,"f","e");
-            graph.addEdge(4,"f","g");
-            /*
-            graph.addEdge(2,"a","b");
-            graph.addEdge(5,"b","c");
-            //graph.addEdge(1,"c","a");
-            graph.addEdge(2,"a","c");
-            graph.addVertex("d");
-            graph.addVertex("e");
-            graph.addVertex("f");
-            graph.addVertex("g");
-            graph.addVertex("h");
-            graph.addVertex("i");
-            graph.addVertex("j");
-            /*
-            graph.addEdge(1,"D","C");
-            graph.addEdge(1,"D","B");
-            graph.addEdge(1,"E","C");
-            graph.addEdge(1,"E","F");
-            graph.addEdge(1,"B","A");
-            graph.addEdge(1,"A","F");
-            /*
-            graph.addEdge(2,"a","c");
-            graph.addEdge(9,"a","e");
-            graph.addEdge(4,"b","a");
-            graph.addEdge(5,"b","e");
-            graph.addEdge(3,"c","f");
-            graph.addEdge(6,"d","b");
-            graph.addEdge(7,"d","e");
-            graph.addEdge(5,"e","c");
-            graph.addEdge(2,"e","f");
-            graph.addEdge(7,"e","g");
-            graph.addEdge(1,"e","h");
-            graph.addEdge(7,"e","i");
-            graph.addEdge(1,"f","h");
-            graph.addEdge(8,"g","d");
-            graph.addEdge(1,"g","i");
-            graph.addEdge(9,"h","i");
-            graph.addEdge(11,"j","l");
-            graph.addEdge(12,"m","l");
-            graph.printGraph();
+//            graph.addEdge(2,"a","c");
+//            graph.addEdge(9,"a","e");
+//            graph.addEdge(4,"b","a");
+//            graph.addEdge(5,"b","e");
+//            graph.addEdge(3,"c","f");
+//            graph.addEdge(6,"d","b");
+//            graph.addEdge(7,"d","e");
+//            graph.addEdge(5,"e","c");
+//            graph.addEdge(2,"e","f");
+//            graph.addEdge(7,"e","g");
+//            graph.addEdge(1,"e","h");
+//            graph.addEdge(7,"e","i");
+//            graph.addEdge(1,"f","h");
+//            graph.addEdge(8,"g","d");
+//            graph.addEdge(1,"g","i");
+//            graph.addEdge(9,"h","i");
+//            graph.addEdge(11,"j","l");
+//            graph.addEdge(12,"m","l");
+            //graph.printGraph();
 
             /*
              * A-2--C-3--F    J

@@ -3,5 +3,5 @@
     android:shape="rectangle">
     <stroke
         android:width="5dip"
-        android:color="@color/accent_material_light" />
+        android:color="@color/colorAccent" />
 </shape>
